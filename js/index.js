@@ -1,36 +1,38 @@
 
-$(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-  
-    $('.main__container_aboutMe_info_paragraph').css({
-      opacity: function() {
-        var elementHeight = $(this).height();
-        return 0.1 - (elementHeight - scrollTop) / elementHeight;
-      }
-    });
-  });
-
-$(window).on("load", function(){
-  $(".loader-wrapper").fadeOut("slow");
-  $("body").removeClass("preload_overflow"); 
-});
 
 
-const ENABLE_HOVER_DELAY = 500;  
-let timer;
-window.addEventListener('scroll', function() {
-  const bodyClassList = document.body.classList;
-  // clear previous timeout function
-  clearTimeout(timer);
+
+
+const wrapper = document.getElementById("tiles");
+let columns = Math.floor(document.body.clientWidth / 100);
+    rows = Math.floor(document.body.clientHeight / 100);
+
+const createTile = index =>{
+    const tile = document.createElement("div");
+
+    tile.classList.add("tile");
+
+    return tile;
+}
+
+const createTiles = quantity=> {
+    Array.from(Array(quantity)).map((tile, index) => {
+        wrapper.appendChild(createTile(index));
+    })
+}
+
+const createGrid = () => {
+    wrapper.innerHTML = "";
+
+    columns = Math.floor(document.body.clientWidth / 100);
+    rows = Math.floor(document.body.clientHeight / 100);
+
+    wrapper.style.setProperty("--columns", columns);
+    wrapper.style.setProperty("--rows", rows);
+
     
-  if (!bodyClassList.contains('disable-hover')) {
-    // add the disable-hover class to the body element
-    bodyClassList.add('disable-hover');
-  }
-        
-  timer = setTimeout(function() {
-    // remove the disable-hover class after a timeout of 500 millis
-    bodyClassList.remove('disable-hover');
-  }, ENABLE_HOVER_DELAY);
-  
-}, false);
+    createTiles(columns * rows);
+}
+
+createGrid();
+window.onresize = () => createGrid();

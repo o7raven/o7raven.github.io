@@ -77,37 +77,27 @@ body{
 .centered{  
     left: 50%;
     position: absolute;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, -50%);
     
 }
 
 #title{
     color: white;
-    font-size: 8vw;
+    font-size: 1.5w;
     line-height: 1.2em;
-    width: 70%;
+    width: 100%;
+    background-color: #4a0a6f;
+    padding: 5rem;
     text-align: center;
     
     font-weight: 1;
+    animation: load_animation 1s linear;
 }
 
-.title_normal{
-    animation: load_animation 1s linear;
 
- }
 
- .title_caligraphy{
-    color: #A555EC;
-    font-family: custom_caligraphy;
-    animation: load_animation 2s linear;
-    transition: color 0.2s ease-in-out;
- }
 
- .title_caligraphy:hover{
-    color: #F56EB3;
-    cursor: pointer;
- }
 
 @keyframes load_animation {
 
@@ -135,9 +125,6 @@ nav{
     font-size: 3vw;
     padding: 1rem;
 
-}
-.nav_links{
-    
 }
 
 .nav_links ul{
@@ -186,10 +173,7 @@ nav{
         
     }
 
-    .title_caligraphy{
-        font-size: 20vw;
-    }
-    
+
     
     
 }

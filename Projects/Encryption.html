@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption/Decryption Tool</title>
+    <link rel="stylesheet" type="text/css" href="/Styles/encryption.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>File Encryption/Decryption Tool</h1>
+        </header>
+        <section class="info">
+            <p>An easy to use tool for encrypting and decrypting files using the Advanced Encryption Standard (AES) algorithm.</p>
+        </section>
+        <section class="description">
+            <h2>Features</h2>
+            <ul>
+                <li>AES encryption using the Pycryptodome library</li>
+                <li>PBKDF2 key derivation with SHA256 hash and 100000 iterations</li>
+                <li>Key generation and storage in a separate file</li>
+                <li>File encryption and decryption using user input</li>
+                <li>Interactive menu and ability to handle user's choices</li>
+                <li>Input Validation</li>
+                <li>Ability to encrypt/decrypt large files</li>
+            </ul>
+            <h2>How to use</h2>
+            <ol>
+                <li>Clone the repository to your local machine or download the script to your computer.</li>
+                <li>Run the script using the command <code>python main.py</code> or execute the <code>main.exe</code>.</li>
+                <li>Select the desired option from the menu:
+                    <ul>
+                        <li>Generate key and encrypt a file</li>
+                        <li>Load key and decrypt a file</li>
+                    </ul>
+                </li>
+                <li>If you chose to generate the key, you will be prompted to enter a password which will be used to encrypt the key</li>
+                <li>After that enter the path of the file to encrypt/decrypt</li>
+                <li>Wait for the encryption/decryption to finish.</li>
+                <li>Enjoy your secure files</li>
+            </ol>
+            <h2>Note</h2>
+            <ul>
+                <li>This script is just an example, you should use better way of storing the key and password, like using environment variable or using a service like Hashicorp's Vault.</li>
+                <li>It is recommended to use AES-GCM which is authenticated encryption mode and also encrypt in a streaming fashion.</li>
+                <li>The salt variable is set to a fixed value, This is not recommended for actual use</li>
+            </ul>
+        </section>
+    </div>
+</body>

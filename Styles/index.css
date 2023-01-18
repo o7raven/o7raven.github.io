@@ -6,7 +6,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #141414;
+    background-color: #242424;
     font-family: Arial, sans-serif;
 }
 a{
@@ -22,7 +22,7 @@ a{
     text-align: center;
 }
 h1{
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 .intro{
@@ -38,7 +38,8 @@ h1{
 }
 
 .about_me{
-    font-size: 2vw;
+    font-size: 1.5vw;
+    width: 40%;
 }
 .about{
     display: grid;

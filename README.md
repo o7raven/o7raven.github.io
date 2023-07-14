@@ -49,6 +49,4 @@
 [issues-shield]: https://img.shields.io/github/issues/o7raven/o7raven.github.io.svg?style=for-the-badge
 [issues-url]: https://github.com/o7raven/o7raven.github.io/
 
-</br></br></br></br>
-<i>[README.md template created by](https://github.com/othneildrew)</i>
 

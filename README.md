@@ -43,14 +43,6 @@
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Twitter - [@o7ravenxd](https://twitter.com/o7ravenxd)</br>
-Discord - [raven.#3993](https://discord.gg/n9yMdp5EDD)</br>
-Instagram - [yakubiq](https://www.instagram.com/yakubiq)
-
-
 
 [stars-shield]: https://img.shields.io/github/stars/o7raven/o7raven.github.io.svg?style=for-the-badge
 [stars-url]: https://github.com/o7raven/o7raven.github.io/stargazers

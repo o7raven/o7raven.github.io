@@ -1,0 +1,66 @@
+body{
+    overflow: hidden;
+    font-family: monospace;
+    background: black;
+    color: white;
+}
+span{
+    color: rgb(134, 150, 255);
+}
+h1{
+    margin: auto;
+    width:60%;
+    margin-top: 10%;
+}
+img{
+position: absolute;
+left: 50%;
+top: 100%;
+transform: translate(-50%);
+transition: 0.5s ease;
+
+}
+
+h1:hover + img {
+    top: 75%; /* Adjust this value as needed */
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    img{
+        display: none;
+    }
+  }
+/*I didn't write the code below, it's not mine, wouldn't waste so much time to do something like this, s/o https://codepen.io/alandunning/pen/RWRrEW*/
+h1::after {
+  content: "";
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: inline-block;
+  background-color: #ffffffb6;
+  vertical-align: top;
+  width: 15px;
+  /* Set height to the line height of .text */
+  height: 30px;
+  /* 
+  Animation paramaters:
+  blink = animation-name, 
+  1s = animation-duration, 
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

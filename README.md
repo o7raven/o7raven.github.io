@@ -32,9 +32,9 @@
     <a href="https://github.com/o7raven/o7raven.github.io"><strong></br>Explore the code</strong></a>
     <br />
     <br /> 
-    · <a href="https://o7raven.github.io">View The Site</a>
+    · <a href="https://o7raven.github.io">View the Site</a>
     ·
-    <a href="https://github.com/o7raven/o7raven.github.io/issues">Report Bug</a>
+    <a href="https://github.com/o7raven/o7raven.github.io/issues">Report a Bug</a>
     ·
   </p>
 </div>

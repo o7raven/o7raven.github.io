@@ -4,15 +4,15 @@ body{
     background: black;
     color: white;
 }
-span{
-    color: rgb(134, 150, 255);
+.wazzup{
+    color: lime;
 }
 h1{
     margin: auto;
     width:60%;
     margin-top: 10%;
 }
-img{
+#me{
 position: absolute;
 left: 50%;
 top: 100%;
@@ -21,16 +21,16 @@ transition: 0.5s ease;
 
 }
 
-h1:hover + img {
+
+
+h1:hover + #me {
     top: 75%; /* Adjust this value as needed */
 }
 @media only screen and (max-width: 600px) {
     h1{
         font-size: 1.3rem;
     }
-    img{
-        display: none;
-    }
+
   }
 /*I didn't write the code below, it's not mine, wouldn't waste so much time to do something like this, s/o https://codepen.io/alandunning/pen/RWRrEW*/
 h1::after {
@@ -63,4 +63,9 @@ h1::after {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
+}
+
+.grcam{
+  cursor: not-allowed;
+  color: rgb(255, 123, 123);
 }
